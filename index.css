@@ -32,7 +32,7 @@ body {
   height: 10vh;
   width: 10vh;
   border-radius: 50%;
-  background-image: url("logo.jpg");
+  background-image: url("image/logo.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -599,3 +599,39 @@ h2 {
     max-height: calc(60vh - 100px); 
   }
 }
+
+
+
+
+
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #131D4F;
+    position: absolute;
+    top: 80px; /* navbar height */
+    left: 0;
+    z-index: 1000;
+  }
+
+  .nav-links a {
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+    color: white;
+    display: block;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+
+
+
+
+
+
+
