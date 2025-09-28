@@ -6,6 +6,13 @@
   <title>Physio DietFit Care</title>
   <link rel="stylesheet" href="index.css">
 </head>
+<!-- Media Modal -->
+<div id="mediaModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage" alt="">
+  <video class="modal-content" id="modalVideo" controls></video>
+</div>
+
 <body>
   <!-- nav bar-->
  <div class="navbar">
@@ -113,16 +120,15 @@ At Physio Diet Fit Care, we believe that true health is a balance of body, mind,
 We bring together a team of qualified physiotherapists, dietitians, psychologists, and healthcare professionals to provide personalized care at your doorstep and online. From pain & injury rehabilitation to customized diet plans, psychological counseling, and laboratory services, we support you in every step of your health journey.
 
 What Makes Us Different?
+ Convenient Care at Home – Physiotherapy, lab tests, and consultations delivered to you.
 
-🏠 Convenient Care at Home – Physiotherapy, lab tests, and consultations delivered to you.
+ Mental Well-Being Support – Professional psychologists for stress, anxiety, and overall emotional health.
 
-🧠 Mental Well-Being Support – Professional psychologists for stress, anxiety, and overall emotional health.
+ Expert Team – Experienced professionals dedicated to recovery & holistic wellness.
 
-👩‍⚕ Expert Team – Experienced professionals dedicated to recovery & holistic wellness.
+ Easy Access – Book appointments, schedule tests, or get instant guidance via WhatsApp.
 
-💬 Easy Access – Book appointments, schedule tests, or get instant guidance via WhatsApp.
-
-💰 Affordable Packages – Designed to be budget-friendly for students, families, and individuals.
+ Affordable Packages – Designed to be budget-friendly for students, families, and individuals.
 
 
 ✨ With us, healthcare is not just a service – it’s a commitment to your healthier tomorrow.
@@ -229,34 +235,42 @@ What Makes Us Different?
   <h2>Our Activities</h2>
 
   <div class="activities-wrapper">
-    <div id="activitiesSlider" class="activities-slider" aria-label="Our Activities gallery">
+    <div class="activities-slider">
 
-      <!-- Slides (replace src paths with your actual files) -->
-      <div class="slide is-active">
+      <!-- Slides -->
+       <div class="slide active">
+        <div class="media-wrap">
+          <img src="image/poshan maah.jpg" alt="Activity 1">
+        </div>
+      </div>
+
+
+      
+      <div class="slide active">
+        <div class="media-wrap">
+          <img src="image/burn seminar.jpg" alt="Activity 1">
+        </div>
+      </div>
+
+       <div class="slide active">
         <div class="media-wrap">
           <img src="image/webinar_act.jpg" alt="Activity 1">
         </div>
       </div>
 
-      <div class="slide">
-        <div class="media-wrap">
-          <video src="activities/activity2.mp4" controls preload="metadata" playsinline webkit-playsinline></video>
-        </div>
-      </div>
-
-      <div class="slide">
-        <div class="media-wrap">
-          <img src="image/ovr.jpg" alt="Activity 3">
-        </div>
-      </div>
+      
+    
 
       <!-- Prev / Next -->
-      <button class="btn prev" type="button" aria-label="Previous slide">‹</button>
-      <button class="btn next" type="button" aria-label="Next slide">›</button>
+     
     </div>
 
-    <!-- dots -->
-    <div class="dots" role="tablist" aria-label="Slide navigation"></div>
+    <!-- Dots -->
+    <div class="dots">
+
+    </div>
+ <button class="btn prev" aria-label="Previous slide">‹</button>
+      <button class="btn next" aria-label="Next slide">›</button>
   </div>
 </section>
 
