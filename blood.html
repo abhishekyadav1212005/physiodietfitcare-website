@@ -1,129 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blood Checkup Services - Physio DietFit Care</title>
-  <meta name="description" content="Comprehensive blood checkup services including urine analysis, microbiology, pathology, and genetic testing. Reliable home sample collection by Physio DietFit Care.">
-  <meta name="keywords" content="Blood Checkup, Laboratory Services, Pathology Test, Urine Analysis, Microbiology Testing, Genetic Testing, Home Sample Collection, Physio DietFit Care">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: "#131D4F",
-            yellow: "#FFC947",
-            cream: "#FEFBF6",
-          }
-        }
-      }
-    }
-  </script>
+  <script>tailwind.config = { theme: { extend: { colors: { navy: "#131D4F", yellow: "#FFC947", cream: "#FEFBF6", teal: "#0E7490" } } } }</script>
 </head>
-<body class="bg-cream text-navy font-sans">
 
-  <!-- Navbar -->
-  <nav class="bg-navy text-white px-6 py-4 flex items-center justify-between shadow-md">
-    <div class="flex items-center gap-4">
-      <img src="image/logo.jpg" alt="Physio DietFit Care Logo" class="w-16 h-16 rounded-full">
-      <h1 class="text-2xl font-bold">PHYSIO DIETFIT CARE</h1>
+<body style="font-family: 'Poppins', sans-serif;">
+  <div class="top-bar">First Consultation is FREE! | TeleRehab from Rs.399 | Call: <a href="tel:+917611155249"
+      style="color:white;font-weight:bold;text-decoration:none;">+91 7611155249</a></div>
+  <nav class="navbar">
+    <div class="nav-left"><a href="index.html">
+        <div class="logo"></div>
+      </a>
+      <h1><a href="index.html" style="text-decoration:none;color:inherit;">PHYSIO DIETFIT CARE</a></h1>
     </div>
+    <div class="nav-links"><a href="index.html" class="nav-item">Home</a><a href="index.html#service"
+        class="nav-item">Services</a><a href="index.html#telerehab" class="nav-item">TeleRehab</a><a
+        href="index.html#AboutUs" class="nav-item">About</a><a href="plans.html" class="nav-item">Plans</a><a
+        href="index.html#Contactus" class="nav-item">Contact</a></div>
+    <div class="nav-right"><a href="index.html#book" class="btn-primary">Book FREE Consultation</a></div>
   </nav>
 
-  <!-- Hero Image -->
   <section class="relative">
-    <img src="https://cdn.pixabay.com/photo/2020/03/18/15/16/blood-4944421_1280.jpg" 
-         alt="Laboratory and Blood Checkup Services" 
-         class="w-full h-64 object-cover rounded-b-xl shadow-lg">
+    <img src="https://cdn.pixabay.com/photo/2020/03/18/15/16/blood-4944421_1280.jpg" alt="Blood Checkup"
+      class="w-full h-64 object-cover shadow-lg">
     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
       <h1 class="text-white text-3xl md:text-4xl font-bold text-center px-4">Comprehensive Blood Checkup Services</h1>
     </div>
   </section>
 
-  <!-- Blood Checkup Section -->
   <section class="max-w-5xl mx-auto p-8 mt-8 bg-white rounded-xl shadow-lg">
-
-    <!-- Introduction -->
     <article class="mb-8 flex flex-col md:flex-row items-center gap-6">
-      <img src="https://images.pexels.com/photos/954584/pexels-photo-954584.jpeg?auto=compress&cs=tinysrgb&w=800" 
-           alt="Blood sample testing in laboratory" 
-           class="w-full md:w-1/2 rounded-xl shadow-md">
+      <img src="https://images.pexels.com/photos/954584/pexels-photo-954584.jpeg?auto=compress&cs=tinysrgb&w=800"
+        alt="Blood testing" class="w-full md:w-1/2 rounded-xl shadow-md">
       <div>
-        <h2 class="text-2xl font-semibold text-navy mb-3">Introduction</h2>
-        <p class="mb-4">
-          At <strong>Physio DietFit Care</strong>, we provide trusted and affordable <strong>blood checkup services</strong> to support your health and wellness journey. 
-          Our expert team ensures accuracy, confidentiality, and patient comfort through every step of testing.
-        </p>
-        <p>
-          From routine health checkups to advanced laboratory diagnostics, we help you track your well-being with professional care and home collection options.
-        </p>
+        <h2 class="text-2xl font-semibold mb-3" style="color:#0E7490;">Introduction</h2>
+        <p class="mb-4">At <strong>Physio DietFit Care</strong>, we provide trusted and affordable <strong>blood checkup
+            services</strong> to support your health journey.</p>
+        <p>From routine health checkups to advanced diagnostics, we help you track your well-being with professional
+          care and home collection options.</p>
       </div>
     </article>
-
-    <!-- Services Offered -->
     <article class="mb-8">
-      <h2 class="text-2xl font-semibold text-navy mb-4 text-center">Services Offered</h2>
+      <h2 class="text-2xl font-semibold mb-4 text-center" style="color:#0E7490;">Services Offered</h2>
       <div class="grid md:grid-cols-2 gap-6">
-
-        <!-- Urine Analysis -->
-        <div class="flex flex-col items-center text-center bg-cream p-4 rounded-xl shadow-md">
-          <img src="https://images.pexels.com/photos/4021771/pexels-photo-4021771.jpeg?auto=compress&cs=tinysrgb&w=400" 
-               alt="Urine Analysis Test" class="w-full h-48 object-cover rounded-lg mb-3">
+        <div class="flex flex-col items-center text-center bg-gray-50 p-4 rounded-xl shadow-md">
+          <img src="https://images.pexels.com/photos/4021771/pexels-photo-4021771.jpeg?auto=compress&cs=tinysrgb&w=400"
+            alt="Urine Analysis" class="w-full h-48 object-cover rounded-lg mb-3">
           <h3 class="font-bold text-lg mb-2">Urine Analysis</h3>
-          <p>Comprehensive urine tests to detect infections, kidney function, and overall health status.</p>
+          <p>Comprehensive urine tests to detect infections and kidney function.</p>
         </div>
-
-        <!-- Microbiology Testing -->
-        <div class="flex flex-col items-center text-center bg-cream p-4 rounded-xl shadow-md">
-          <img src="https://media.istockphoto.com/id/2202227172/photo/human-blood-under-a-microscope-you-can-see-erythrocytes-red-blood-cells.webp?a=1&b=1&s=612x612&w=0&k=20&c=olOjQ-3NmFQH6655o70MhIIzGPVlXVHNS1hZuSJELc8=" 
-               alt="Microbiology Testing" class="w-full h-48 object-cover rounded-lg mb-3">
+        <div class="flex flex-col items-center text-center bg-gray-50 p-4 rounded-xl shadow-md">
+          <img
+            src="https://media.istockphoto.com/id/2202227172/photo/human-blood-under-a-microscope-you-can-see-erythrocytes-red-blood-cells.webp?a=1&b=1&s=612x612"
+            alt="Microbiology" class="w-full h-48 object-cover rounded-lg mb-3">
           <h3 class="font-bold text-lg mb-2">Microbiology Testing</h3>
-          <p>Advanced tests for bacterial, viral, and fungal infections to support accurate diagnosis.</p>
+          <p>Advanced tests for bacterial, viral, and fungal infections.</p>
         </div>
-
-        <!-- Pathology Services -->
-        <div class="flex flex-col items-center text-center bg-cream p-4 rounded-xl shadow-md">
-          <img src="https://images.unsplash.com/photo-1579781403289-674275bc71c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHBhdGhvbG9neXxlbnwwfHwwfHx8MA%3D%3D" 
-               alt="Pathology Services" class="w-full h-48 object-cover rounded-lg mb-3">
+        <div class="flex flex-col items-center text-center bg-gray-50 p-4 rounded-xl shadow-md">
+          <img src="https://images.unsplash.com/photo-1579781403289-674275bc71c5?w=600&auto=format&fit=crop&q=60"
+            alt="Pathology" class="w-full h-48 object-cover rounded-lg mb-3">
           <h3 class="font-bold text-lg mb-2">Pathology Services</h3>
           <p>Routine blood tests, liver & kidney function, thyroid, cholesterol, and more.</p>
         </div>
-
-        <!-- Genetic Testing -->
-        <div class="flex flex-col items-center text-center bg-cream p-4 rounded-xl shadow-md">
-          <img src="https://media.istockphoto.com/id/1161982001/photo/dna-health-science-future-research.jpg?s=612x612&w=0&k=20&c=s5PwU2CreBycVf84FXlU_225oVbu__XqjWW5AyCaD7g=" 
-               alt="Genetic Testing" class="w-full h-48 object-cover rounded-lg mb-3">
+        <div class="flex flex-col items-center text-center bg-gray-50 p-4 rounded-xl shadow-md">
+          <img src="https://media.istockphoto.com/id/1161982001/photo/dna-health-science-future-research.jpg?s=612x612"
+            alt="Genetic Testing" class="w-full h-48 object-cover rounded-lg mb-3">
           <h3 class="font-bold text-lg mb-2">Genetic Testing</h3>
-          <p>DNA-based tests to identify inherited conditions, health risks, and personalized care needs.</p>
+          <p>DNA-based tests to identify inherited conditions and health risks.</p>
         </div>
-
       </div>
     </article>
 
-    <!-- How It Works -->
-    <article class="mb-8">
-      <h2 class="text-2xl font-semibold text-navy mb-4 text-center">How It Works</h2>
-      <ol class="list-decimal list-inside space-y-2">
-        <li><strong>Book Appointment:</strong> Schedule your test online or via phone.</li>
-        <li><strong>Sample Collection:</strong> Choose home collection or visit our nearest lab.</li>
-        <li><strong>Lab Testing:</strong> Our experts perform accurate and timely analysis.</li>
-        <li><strong>Reports & Consultation:</strong> Receive your results securely with expert guidance.</li>
-      </ol>
-    </article>
-
-   
-
-       <!-- Offer Price Packages -->
+    <!-- Offer Packages -->
     <article class="mb-12">
-      <h2 class="text-3xl font-bold text-navy mb-8 text-center">💉 Special Offer Packages</h2>
-
+      <h2 class="text-3xl font-bold mb-8 text-center" style="color:#0E7490;">💉 Special Offer Packages</h2>
       <div class="grid md:grid-cols-3 gap-8">
-
-        <!-- Rs 999 -->
-        <div class="bg-white border-2 border-yellow rounded-2xl shadow-lg p-6 text-center hover:scale-105 hover:shadow-xl transition duration-300">
-          <h3 class="text-2xl font-bold text-navy mb-2">₹999/-</h3>
-          <p class="text-yellow font-semibold mb-4">Basic Health Package</p>
+        <div
+          class="bg-white border-2 border-gray-200 rounded-2xl shadow-lg p-6 text-center hover:scale-105 hover:shadow-xl transition duration-300">
+          <h3 class="text-2xl font-bold mb-2" style="color:#0E7490;">₹999/-</h3>
+          <p class="font-semibold mb-4" style="color:#FFC947;">Basic Health Package</p>
           <ul class="space-y-2 text-gray-700">
             <li>✔ CBC</li>
             <li>✔ TFT</li>
@@ -132,11 +97,9 @@
             <li>✔ Lipid Profile</li>
           </ul>
         </div>
-
-        <!-- Rs 1499 (highlighted) -->
-        <div class="bg-white border-2 border-yellow rounded-2xl shadow-lg p-6 text-center hover:scale-105 hover:shadow-xl transition duration-300">
-          <h3 class="text-3xl font-extrabold mb-2">₹1499/-</h3>
-          
+        <div
+          class="bg-white border-2 border-gray-200 rounded-2xl shadow-lg p-6 text-center hover:scale-105 hover:shadow-xl transition duration-300">
+          <h3 class="text-3xl font-extrabold mb-2" style="color:#0E7490;">₹1499/-</h3>
           <ul class="space-y-2 font-medium">
             <li>✔ CBC</li>
             <li>✔ TFT</li>
@@ -147,12 +110,12 @@
             <li>✔ ESR</li>
           </ul>
         </div>
-
-        <!-- Rs 1999 -->
-        <div class="bg-yellow text-navy rounded-2xl shadow-2xl p-8  text-center hover:scale-105 hover:shadow-xl transition duration-300 border-4 border-navy">
-          <h3 class="text-2xl font-bold text-navy mb-2">₹1999/-</h3>
-          <p class="text- font-semibold mb-4">Advanced Health Package</p>
-        <p class="bg-navy text-yellow px-3 py-1 rounded-full inline-block font-bold mb-4">🔥 Best Value</p>
+        <div class="rounded-2xl shadow-2xl p-8 text-center hover:scale-105 transition duration-300 border-4"
+          style="background-color:#FFC947; border-color:#0E7490;">
+          <h3 class="text-2xl font-bold mb-2" style="color:#0E7490;">₹1999/-</h3>
+          <p class="font-semibold mb-2">Advanced Health Package</p>
+          <p class="px-3 py-1 rounded-full inline-block font-bold mb-4 text-white" style="background-color:#0E7490;">🔥
+            Best Value</p>
           <ul class="space-y-2 text-gray-700">
             <li>✔ CBC</li>
             <li>✔ RFT</li>
@@ -166,30 +129,46 @@
             <li>✔ ESR</li>
           </ul>
         </div>
-
       </div>
     </article>
 
-
-
-
-    <!-- Back Button -->
-    <div class="text-center my-8">
-      <a href="index.html#service" 
-         class="inline-block bg-navy text-yellow px-6 py-2 rounded-full shadow-md font-bold hover:scale-105 transition">
-         ← Back to Services
-      </a>
-    </div>
-
+    <div class="text-center my-8"><a href="index.html#service" class="btn-primary">← Back to Services</a></div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-navy text-white text-center py-4">
-    <p>&copy; <span id="year"></span> Physio DietFit Care. All Rights Reserved.</p>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Physio DietFit Care</h3>
+        <p>Your trusted partner for physiotherapy, diet planning, and preventive healthcare.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#service">Services</a></li>
+          <li><a href="index.html#AboutUs">About Us</a></li>
+          <li><a href="plans.html">Plans</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Phone:</strong> +91 7611155249</p>
+        <p><strong>Email:</strong> physiodietfitcare@gmail.com</p>
+        <p><strong>Address:</strong> Chandigarh, India</p>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4><a href="https://www.instagram.com/physiodietfitcare" target="_blank"><i
+            class="fab fa-instagram" style="font-size:1.5rem;"></i></a><a
+          href="https://www.facebook.com/physiodietfitcare" target="_blank"><i class="fab fa-facebook-f"
+            style="font-size:1.5rem;"></i></a><a href="https://youtube.com/@physiodietfitcare" target="_blank"><i
+            class="fab fa-youtube" style="font-size:1.5rem;"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Physio DietFit Care. All Rights Reserved.</p>
+    </div>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
+
 </html>

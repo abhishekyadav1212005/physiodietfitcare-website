@@ -1,183 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Health & Wellness Plans</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Health & Wellness Plans - Physio DietFit Care</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { theme: { extend: { colors: { navy: "#131D4F", yellow: "#FFC947", cream: "#FEFBF6", teal: "#0E7490" } } } }</script>
 </head>
-<body class="bg-slate-900 text-white">
 
-    <div class="container mx-auto p-8">
+<body style="font-family: 'Poppins', sans-serif;">
+    <div class="top-bar">First Consultation is FREE! | TeleRehab from Rs.399 | Call: <a href="tel:+917611155249"
+            style="color:white;font-weight:bold;text-decoration:none;">+91 7611155249</a></div>
+    <nav class="navbar">
+        <div class="nav-left"><a href="index.html">
+                <div class="logo"></div>
+            </a>
+            <h1><a href="index.html" style="text-decoration:none;color:inherit;">PHYSIO DIETFIT CARE</a></h1>
+        </div>
+        <div class="nav-links"><a href="index.html" class="nav-item">Home</a><a href="index.html#service"
+                class="nav-item">Services</a><a href="index.html#telerehab" class="nav-item">TeleRehab</a><a
+                href="index.html#AboutUs" class="nav-item">About</a><a href="plans.html"
+                class="nav-item active">Plans</a><a href="index.html#Contactus" class="nav-item">Contact</a></div>
+        <div class="nav-right"><a href="index.html#book" class="btn-primary">Book FREE Consultation</a></div>
+    </nav>
 
+    <div class="py-16 px-8" style="background: linear-gradient(135deg, #131D4F, #0E7490);">
         <header class="text-center mb-16">
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-3">Our Health & Wellness Plans</h1>
-            <p class="text-lg text-slate-400">Choose a plan that's right for you and start your journey to a healthier life.</p>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-white mb-3">Our Health & Wellness Plans</h1>
+            <p class="text-lg text-gray-300">Choose a plan that's right for you and start your journey to a healthier
+                life.</p>
         </header>
 
         <main class="grid grid-cols-1 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-
-            <div class="bg-slate-800 border border-slate-700 rounded-xl p-8 flex flex-col hover:border-cyan-500 transition-all duration-300">
-                <h2 class="text-2xl font-bold text-cyan-400">Silver Plan</h2>
-                <p class="text-slate-400 mt-2 mb-6">Perfect for getting started.</p>
-                
+            <div
+                class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-8 flex flex-col hover:border-teal transition-all duration-300 text-white">
+                <h2 class="text-2xl font-bold" style="color:#FFC947;">Silver Plan</h2>
+                <p class="text-gray-300 mt-2 mb-6">Perfect for getting started.</p>
                 <div class="mb-6">
-                    <span class="text-xl text-slate-500 line-through">₹4999</span>
+                    <span class="text-xl text-gray-400 line-through">₹4999</span>
                     <span class="text-5xl font-extrabold text-white">₹3999</span>
-                    <span class="text-slate-400">/month</span>
+                    <span class="text-gray-300">/month</span>
                 </div>
-                
-                <ul class="space-y-4 text-slate-300 flex-grow mb-8">
-                    <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>4 Physio Sessions</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 Diet Consultation</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 Basic Blood Test</li>
+                <ul class="space-y-4 text-gray-200 flex-grow mb-8">
+                    <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> 4 Physio Sessions
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> 1 Diet Consultation
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> 1 Basic Blood Test
+                    </li>
                 </ul>
-                
-                <!-- <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-slate-600 transition-colors">Choose Plan</a> -->
             </div>
 
-            <div class="bg-slate-800 border-2 border-red-500 rounded-xl p-8 flex flex-col relative transform lg:scale-105">
-                <span class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-red-500 text-white text-xs font-bold px-4 py-1 rounded-full">MOST POPULAR</span>
-                <h2 class="text-2xl font-bold text-red-400">Gold Plan</h2>
-                <p class="text-slate-400 mt-2 mb-6">Ideal for consistent progress.</p>
-                
+            <div class="bg-white/10 backdrop-blur-sm border-2 rounded-xl p-8 flex flex-col relative transform lg:scale-105 text-white"
+                style="border-color:#FFC947;">
+                <span
+                    class="absolute top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 text-xs font-bold px-4 py-1 rounded-full"
+                    style="background-color:#FFC947; color:#131D4F;">MOST POPULAR</span>
+                <h2 class="text-2xl font-bold" style="color:#FFC947;">Gold Plan</h2>
+                <p class="text-gray-300 mt-2 mb-6">Ideal for consistent progress.</p>
                 <div class="mb-6">
-                    <span class="text-xl text-slate-500 line-through">₹8999</span>
+                    <span class="text-xl text-gray-400 line-through">₹8999</span>
                     <span class="text-5xl font-extrabold text-white">₹6999</span>
-                    <span class="text-slate-400">/month</span>
+                    <span class="text-gray-300">/month</span>
                 </div>
-                
-                <ul class="space-y-4 text-slate-300 flex-grow mb-8">
-                    <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>8 Physio Sessions</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>2 Diet Consultations</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>1 Comprehensive Blood Test</li>
+                <ul class="space-y-4 text-gray-200 flex-grow mb-8">
+                    <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> 8 Physio Sessions
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> 2 Diet Consultations
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> 1 Comprehensive Blood
+                        Test</li>
                 </ul>
-                
-                <!-- <a href="#" class="mt-auto w-full text-center bg-red-500 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-600 transition-colors">Choose Plan</a> -->
             </div>
 
-            <div class="bg-slate-800 border border-slate-700 rounded-xl p-8 flex flex-col hover:border-cyan-500 transition-all duration-300">
-                <h2 class="text-2xl font-bold text-cyan-400">Platinum Plan</h2>
-                <p class="text-slate-400 mt-2 mb-6">All-inclusive premium care.</p>
-                
+            <div
+                class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl p-8 flex flex-col hover:border-teal transition-all duration-300 text-white">
+                <h2 class="text-2xl font-bold" style="color:#FFC947;">Platinum Plan</h2>
+                <p class="text-gray-300 mt-2 mb-6">All-inclusive premium care.</p>
                 <div class="mb-6">
                     <span class="text-5xl font-extrabold text-white">₹14999</span>
-                    <span class="text-slate-400">/month</span>
+                    <span class="text-gray-300">/month</span>
                 </div>
-                
-                <ul class="space-y-4 text-slate-300 flex-grow mb-8">
-                    <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>12 Physio Sessions</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>4 Diet Consultations</li>
-                     <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>2 Blood Tests</li>
-                    <li class="flex items-center"><svg class="w-5 h-5 text-green-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Unlimited WhatsApp Support</li>
+                <ul class="space-y-4 text-gray-200 flex-grow mb-8">
+                    <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> 12 Physio Sessions
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> 4 Diet Consultations
+                    </li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> 2 Blood Tests</li>
+                    <li class="flex items-center"><i class="fas fa-check text-green-400 mr-3"></i> Unlimited WhatsApp
+                        Support</li>
                 </ul>
-                
-                <!-- <a href="#" class="mt-auto w-full text-center bg-slate-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-slate-600 transition-colors">Choose Plan</a> -->
             </div>
         </main>
-        
+
         <section class="mt-24 max-w-5xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12">Individual Service Pricing</h2>
-            
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center mb-12 text-white">Individual Service Pricing</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <div class="bg-slate-800/50 p-6 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-6 text-cyan-300">Physiotherapy Sessions</h3>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg text-white">
+                    <h3 class="text-2xl font-bold mb-6" style="color:#FFC947;">Physiotherapy Sessions</h3>
                     <div class="space-y-4">
-                        <div class="flex justify-between items-center p-3 bg-slate-800 rounded-md">
-                            <p class="text-slate-300">1 Session</p>
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-md">
+                            <p class="text-gray-300">1 Session</p>
                             <p class="font-bold text-xl text-white">₹899</p>
                         </div>
-                        <div class="flex justify-between items-center p-3 bg-slate-800 rounded-md">
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-md">
                             <div>
-                                <p class="text-slate-300">5 Sessions</p>
+                                <p class="text-gray-300">5 Sessions</p>
                                 <p class="text-green-400 text-sm">Save ₹1000</p>
                             </div>
                             <p class="font-bold text-xl text-white">₹3500</p>
                         </div>
-                         <div class="flex justify-between items-center p-3 bg-slate-800 rounded-md">
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-md">
                             <div>
-                                <p class="text-slate-300">10 Sessions</p>
+                                <p class="text-gray-300">10 Sessions</p>
                                 <p class="text-green-400 text-sm">Save ₹2491</p>
                             </div>
                             <p class="font-bold text-xl text-white">₹6499</p>
                         </div>
                     </div>
                 </div>
-                
-                <div class="bg-slate-800/50 p-6 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-6 text-cyan-300">Diet & Nutrition</h3>
+                <div class="bg-white/10 backdrop-blur-sm p-6 rounded-lg text-white">
+                    <h3 class="text-2xl font-bold mb-6" style="color:#FFC947;">Diet & Nutrition</h3>
                     <div class="space-y-4">
-                        <div class="flex justify-between items-center p-3 bg-slate-800 rounded-md">
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-md">
                             <div>
-                                <p class="text-slate-300">Quick Start Plan</p>
-                                <p class="text-xs text-slate-400">1 Consult + 7 Day Meal Plan</p>
+                                <p class="text-gray-300">Quick Start Plan</p>
+                                <p class="text-xs text-gray-400">1 Consult + 7 Day Meal Plan</p>
                             </div>
                             <p class="font-bold text-xl text-white">₹799</p>
                         </div>
-                        <div class="flex justify-between items-center p-3 bg-slate-800 rounded-md">
-                             <div>
-                                <p class="text-slate-300">Monthly Plan</p>
-                                <p class="text-xs text-slate-400">4 Consults + Weekly Updates</p>
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-md">
+                            <div>
+                                <p class="text-gray-300">Monthly Plan</p>
+                                <p class="text-xs text-gray-400">4 Consults + Weekly Updates</p>
                             </div>
                             <p class="font-bold text-xl text-white">₹2500</p>
                         </div>
-                        <div class="flex justify-between items-center p-3 bg-slate-800 rounded-md">
+                        <div class="flex justify-between items-center p-3 bg-white/5 rounded-md">
                             <div>
-                                <p class="text-slate-300">3 Month Plan</p>
-                                <p class="text-xs text-slate-400">12 Consults + Unlimited Text</p>
-                            </div>
-                            <p class="font-bold text-xl text-white">₹7999</p>
-                        </div>
-                    </div>
-                </div>
-
-                 <div class="bg-slate-800/50 p-6 rounded-lg">
-                    <h3 class="text-2xl font-bold mb-6 text-cyan-300">Diet & Nutrition</h3>
-                    <div class="space-y-4">
-                        <div class="flex justify-between items-center p-3 bg-slate-800 rounded-md">
-                            <div>
-                                <p class="text-slate-300">Quick Start Plan</p>
-                                <p class="text-xs text-slate-400">1 Consult + 7 Day Meal Plan</p>
-                            </div>
-                            <p class="font-bold text-xl text-white">₹799</p>
-                        </div>
-                        <div class="flex justify-between items-center p-3 bg-slate-800 rounded-md">
-                             <div>
-                                <p class="text-slate-300">Monthly Plan</p>
-                                <p class="text-xs text-slate-400">4 Consults + Weekly Updates</p>
-                            </div>
-                            <p class="font-bold text-xl text-white">₹2500</p>
-                        </div>
-                        <div class="flex justify-between items-center p-3 bg-slate-800 rounded-md">
-                            <div>
-                                <p class="text-slate-300">3 Month Plan</p>
-                                <p class="text-xs text-slate-400">12 Consults + Unlimited Text</p>
+                                <p class="text-gray-300">3 Month Plan</p>
+                                <p class="text-xs text-gray-400">12 Consults + Unlimited Text</p>
                             </div>
                             <p class="font-bold text-xl text-white">₹7999</p>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
-
-
     </div>
-     <!-- Back Button -->
-  <div class="text-center my-8">
-    <a href="index.html#service" 
-       class="inline-block bg-red text-yellow px-6 py-2 rounded-full shadow-md font-bold hover:scale-105 transition">
-       ← Back to Services
-    </a>
-  </div>
 
+    <div class="text-center my-8"><a href="index.html#service" class="btn-primary">← Back to Services</a></div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Physio DietFit Care</h3>
+                <p>Your trusted partner for physiotherapy, diet planning, and preventive healthcare.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#service">Services</a></li>
+                    <li><a href="index.html#AboutUs">About Us</a></li>
+                    <li><a href="plans.html">Plans</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Phone:</strong> +91 7611155249</p>
+                <p><strong>Email:</strong> physiodietfitcare@gmail.com</p>
+                <p><strong>Address:</strong> Chandigarh, India</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4><a href="https://www.instagram.com/physiodietfitcare" target="_blank"><i
+                        class="fab fa-instagram" style="font-size:1.5rem;"></i></a><a
+                    href="https://www.facebook.com/physiodietfitcare" target="_blank"><i class="fab fa-facebook-f"
+                        style="font-size:1.5rem;"></i></a><a href="https://youtube.com/@physiodietfitcare"
+                    target="_blank"><i class="fab fa-youtube" style="font-size:1.5rem;"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> Physio DietFit Care. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
+
 </html>
