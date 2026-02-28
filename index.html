@@ -1,344 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Physio DietFit Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="index.css">
 </head>
-<!-- Media Modal -->
-<div id="mediaModal" class="modal">
-  <span class="close">&times;</span>
-  <img class="modal-content" id="modalImage" alt="">
-  <video class="modal-content" id="modalVideo" controls></video>
-</div>
 
 <body>
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    First Consultation is FREE! | TeleRehab from Rs.399 | Call: <a href="tel:+917611155249"
+      style="color: white; font-weight: bold; text-decoration: none;">+91 7611155249</a>
+  </div>
+
   <!-- nav bar-->
- <div class="navbar">
-  <div class="logo"></div>
-  <h1>PHYSIO DIETFIT CARE</h1>
+  <nav class="navbar">
+    <div class="nav-left">
+      <div class="logo"></div>
+      <h1>PHYSIO DIETFIT CARE</h1>
+    </div>
 
-  
+    <div class="nav-links">
+      <a href="#home" class="nav-item">Home</a>
+      <a href="#service" class="nav-item">Services</a>
+      <a href="#telerehab" class="nav-item">TeleRehab</a>
+      <a href="#AboutUs" class="nav-item">About</a>
+      <a href="plans.html" class="nav-item">Plans</a>
+      <a href="#Contactus" class="nav-item">Contact</a>
+    </div>
 
-
-    <a href="#home">Home</a>
-    <a href="#service">Our Services</a>
-    <a href="#AboutUs">About Us</a>
-    <a href="#OurActivites">Our Activites</a>
-    <a href="#ourpartners">Our Partners</a>
-
-</div>
-
-
-
-  
+    <div class="nav-right">
+      <a href="#book" class="btn-primary">Book FREE Consultation</a>
+    </div>
+  </nav>
 
   <!-- home section -->
-  <section id="home">
-    <div class="hero-img"></div>
-    <div class="tagline">
-      <h1 class="h1">Your Health,<br>Our priority</h1>
-      <p>Expert physiotherapy, personalised diet plans and on-the-go blood checkups and many more.</p>
-      <div class="img">
-        <a href="tel:+917814365306">
-          <img src="https://img.icons8.com/?size=100&id=OtGcJScJadSi&format=png&color=000000" alt="Physiotherapy near me">
-          Call Now
+  <section id="home" class="hero-section">
+    <div class="hero-content">
+      <h1 class="h1">Expert Physiotherapy, Diet & Mental Wellness &mdash; At Your Doorstep</h1>
+      <p>Qualified physios, dietitians & psychologists serving Chandigarh. First consultation is completely FREE.</p>
+
+      <div class="hero-buttons">
+        <a href="#book" class="btn-primary">Book FREE Consultation</a>
+        <a href="https://wa.me/917611155249?text=Hi!%20I%20would%20like%20to%20book%20a%20free%20consultation%20with%20Physio%20DietFit%20Care.%20Please%20guide%20me."
+          class="btn-secondary" target="_blank">
+          <i class="fab fa-whatsapp" style="font-size: 1.2rem;"></i> WhatsApp Us
         </a>
       </div>
+
+      <div class="trust-badges">
+        <div class="badge"><strong>100+</strong> Happy Patients</div>
+        <div class="badge"><strong>5.0/5.0</strong> <i class="fab fa-google" style="color:#FFC947;"></i> Google Rating
+        </div>
+        <div class="badge"><strong>1st Consult</strong> FREE</div>
+        <div class="badge"><strong>Home visits</strong> Available</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR PARTNERS SECTION (Smooth Carousel) -->
+  <section id="ourpartners" class="partners-section">
+    <div class="section-header">
+      <h2>Trusted Partners Across Chandigarh</h2>
+      <p style="text-align: center; color: #666;">Working together to bring you the best healthcare</p>
+    </div>
+    <div class="partners-carousel">
+      <div class="partners-track">
+        <img src="image/tiwana.jpg" alt="Tiwana Gym">
+        <img src="image/burn.jpg" alt="Burn">
+        <img src="image/mpr.jpg" alt="MPR">
+        <img src="image/shc.jpg" alt="SHC">
+        <img src="image/bone.jpg" alt="Bone">
+        <img src="image/boneCare.jpg" alt="Bone Care">
+        <img src="image/sk.jpg" alt="SK">
+        <img src="image/mrn.jpg" alt="MRN">
+        <img src="image/ovr.jpg" alt="OVR Gym">
+        <!-- Duplicates for infinite scroll -->
+        <img src="image/tiwana.jpg" alt="Tiwana Gym">
+        <img src="image/burn.jpg" alt="Burn">
+        <img src="image/mpr.jpg" alt="MPR">
+        <img src="image/shc.jpg" alt="SHC">
+        <img src="image/bone.jpg" alt="Bone">
+        <img src="image/boneCare.jpg" alt="Bone Care">
+        <img src="image/sk.jpg" alt="SK">
+        <img src="image/mrn.jpg" alt="MRN">
+        <img src="image/ovr.jpg" alt="OVR Gym">
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / Trust Strip -->
+  <section class="stats-strip">
+    <div class="stat-item">
+      <h3><span class="count">100</span>+</h3>
+      <p>Patients Treated</p>
+    </div>
+    <div class="stat-item google-rating-card">
+      <div style="display:flex;align-items:center;gap:18px;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="52" height="52">
+          <path fill="#FFC107"
+            d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z" />
+          <path fill="#FF3D00"
+            d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z" />
+          <path fill="#4CAF50"
+            d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0124 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z" />
+          <path fill="#1976D2"
+            d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 01-4.087 5.571l.001-.001 6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z" />
+        </svg>
+        <div>
+          <div style="display:flex;gap:3px;margin-bottom:4px;">
+            <i class="fas fa-star" style="color:#FFC107;font-size:1.2rem;"></i>
+            <i class="fas fa-star" style="color:#FFC107;font-size:1.2rem;"></i>
+            <i class="fas fa-star" style="color:#FFC107;font-size:1.2rem;"></i>
+            <i class="fas fa-star" style="color:#FFC107;font-size:1.2rem;"></i>
+            <i class="fas fa-star" style="color:#FFC107;font-size:1.2rem;"></i>
+          </div>
+          <p style="margin:0;font-size:1.05rem;">Top Rated: <strong
+              style="color:#FFC947;font-size:1.3rem;">5.0/5</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="stat-item">
+      <h3><span class="count">6</span>+</h3>
+      <p>Services Offered</p>
+    </div>
+    <div class="stat-item">
+      <h3>FREE</h3>
+      <p>1st Consultation</p>
+    </div>
+  </section>
+
+  <!-- Lead Capture Form -->
+  <section id="book" class="lead-capture-section">
+    <div class="form-container">
+      <h2>Book Your FREE Consultation Today</h2>
+      <p class="subtitle">No Charges, No Commitment</p>
+      <form action="#" method="POST" class="booking-form">
+        <div class="form-row">
+          <input type="text" placeholder="Full Name" required>
+          <input type="tel" placeholder="+91 Mobile Number" required>
+        </div>
+        <div class="form-row">
+          <select required>
+            <option value="" disabled selected>Service Needed</option>
+            <option>Physiotherapy</option>
+            <option>TeleRehab</option>
+            <option>Diet Plan</option>
+            <option>Psychology</option>
+            <option>Blood Test</option>
+            <option>Other</option>
+          </select>
+          <select required>
+            <option value="" disabled selected>Preferred Time</option>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+          </select>
+        </div>
+        <textarea rows="3" placeholder="Message or Condition (optional)"></textarea>
+        <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 15px;">Get FREE
+          Callback</button>
+        <p class="reassurance"><i class="fas fa-lock"></i> Your information is safe. We will call within 2 hours.</p>
+      </form>
     </div>
   </section>
 
   <!-- service section -->
-  <section id="service">
-    <h2>Our Services</h2>
-    <div class="services">
-      <a href="physiotherapy-at-home.html">
-      <div>
-        <img src="https://img.icons8.com/?size=100&id=zp4c1TOpVmew&format=png&color=000000" alt="PHYSIOTHERAPY IN INDIA">
-        <h3>Physiotherapy at home</h3>
-        <p>Convenient at-home therapy sessions</p>
-      </div>
+  <section id="service" class="services-section">
+    <div class="section-header">
+      <h2>Our Healthcare Services</h2>
+      <p style="text-align: center; font-size: 1.2rem;">Expert care personalized for your recovery and well-being.</p>
+    </div>
+    <div class="services-grid">
+      <!-- 1 -->
+      <a href="physiotherapy-at-home.html" class="service-card">
+        <div class="icon-wrap" style="color: #0E7490; background: #e0f2fe;"><i class="fas fa-user-md"></i></div>
+        <h3>Physiotherapy at Home</h3>
+        <p>Certified physios visit you. Pain relief, mobility & recovery.</p>
+        <span class="learn-more">Learn More &rarr;</span>
       </a>
-
-      <a href="pain.html">
-      <div>
-        <img src="https://img.icons8.com/?size=100&id=H1fFw1oTDeZe&format=png&color=000000" alt="DIET PLANS NEAR ME">
-        <h3>Pain & Injury Rehab</h3>
-        <p>Restore mobility and reduce pain</p>
-      </div>
+      <!-- 2 (TeleRehab highlight) -->
+      <a href="#telerehab" class="service-card highlight-card">
+        <div class="card-badge">Only Rs.399</div>
+        <div class="icon-wrap" style="color: #3b82f6; background: #dceafe;"><i class="fas fa-laptop-medical"></i></div>
+        <h3>PhysioDiet TeleRehab</h3>
+        <p>Online rehab sessions from Rs.399. Book via WhatsApp or phone.</p>
+        <span class="learn-more">Learn More &rarr;</span>
       </a>
-
-    <a href="personalised-diet-plans.html">
-      <div>
-        <img src="https://img.icons8.com/?size=100&id=NvOLNdaq96ja&format=png&color=000000" alt="">
+      <!-- 3 -->
+      <a href="personalised-diet-plans.html" class="service-card">
+        <div class="icon-wrap" style="color: #22c55e; background: #dcfce7;"><i class="fas fa-apple-alt"></i></div>
         <h3>Personalized Diet Plans</h3>
-        <p>Custom nutrition advice</p>
-      </div>
+        <p>Custom meal and nutrition plans by qualified dietitians.</p>
+        <span class="learn-more">Learn More &rarr;</span>
       </a>
-
-      <a href="mental-health.html">
-      <div>
-        <img src="https://img.icons8.com/?size=100&id=b3wWELNUeGMP&format=png&color=000000" alt="">
-        <h3> Mental fitness</h3>
-        <p>Schizophrenia,Depression & Bipolar Disorder,Anxiety,etc..</p>
-      </div>
+      <!-- 4 -->
+      <a href="mental-health.html" class="service-card">
+        <div class="icon-wrap" style="color: #a855f7; background: #f3e8ff;"><i class="fas fa-brain"></i></div>
+        <h3>Psychology & Mental Wellness</h3>
+        <p>Therapy for depression, anxiety, schizophrenia, bipolar & more.</p>
+        <span class="learn-more">Learn More &rarr;</span>
       </a>
-
-
-      <a href="blood.html">
-      <div>
-        <img src="https://img.icons8.com/?size=100&id=fXQ3pJSmWnXz&format=png&color=000000" alt="">
-        <h3>Blood Checkup</h3>
-        <p>All Tests Are Available</p>
-      </div>
+      <!-- 5 -->
+      <a href="blood.html" class="service-card">
+        <div class="icon-wrap" style="color: #ef4444; background: #fee2e2;"><i class="fas fa-vial"></i></div>
+        <h3>Blood Test at Home</h3>
+        <p>All tests available. Sample collection at your doorstep.</p>
+        <span class="learn-more">Learn More &rarr;</span>
       </a>
-
-
-      <div>
-        <img src="https://img.icons8.com/?size=100&id=16713&format=png&color=000000" alt="">
-        <h3>WhatsApp Consultation</h3>
-        <p>Chat Directly With Our Experts</p>
-      </div>
-       <a href="plans.html">
-       <div>
-        <img src="https://img.icons8.com/?size=100&id=XdiWRcDXauta&format=png&color=000000" alt="physiotherapy price in chandigarh,india">
-        <h3>OUR PLANS</h3>
-        <p>OUR PRICES FOR PHYSIOTHERAPY,DIET PLANS,MENTAL WELLNESS,BLOOD CHECK UP ...</p>
-      </div>
+      <!-- 6 -->
+      <a href="pain.html" class="service-card">
+        <div class="icon-wrap" style="color: #f97316; background: #ffedd5;"><i class="fas fa-crutch"></i></div>
+        <h3>Pain & Injury Rehab</h3>
+        <p>Restore movement and reduce pain with targeted rehab.</p>
+        <span class="learn-more">Learn More &rarr;</span>
+      </a>
+      <!-- 7 -->
+      <a href="plans.html" class="service-card">
+        <div class="icon-wrap" style="color: #6366f1; background: #e0e7ff;"><i class="fas fa-tags"></i></div>
+        <h3>Plans & Pricing</h3>
+        <p>Affordable packages for physio, diet, mental health & blood tests.</p>
+        <span class="learn-more">Learn More &rarr;</span>
       </a>
     </div>
   </section>
 
-  <!-- About us -->
-  <section id="AboutUs">
-    <h2>About Us</h2>
-    <div>
-      <p style="font-size: 20px;">
-At Physio Diet Fit Care, we believe that true health is a balance of body, mind, and nutrition. Our mission is to make quality healthcare accessible, affordable, and convenient for everyone.
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works-section">
+    <div class="section-header">
+      <h2>How It Works</h2>
+      <p>Your journey to recovery in 3 simple steps</p>
+    </div>
+    <div class="steps-container">
+      <div class="step-card">
+        <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
+        <h3>Step 1 &mdash; Book</h3>
+        <p>Call, WhatsApp, or fill the form. First consultation is 100% FREE.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon"><i class="fas fa-user-md"></i></div>
+        <h3>Step 2 &mdash; Expert Care</h3>
+        <p>Physio visits your home, OR join PhysioDiet TeleRehab from Rs.399.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon"><i class="fas fa-heartbeat"></i></div>
+        <h3>Step 3 &mdash; Recover</h3>
+        <p>Get your personalized plan. Track progress with our expert team.</p>
+      </div>
+    </div>
+  </section>
 
-We bring together a team of qualified physiotherapists, dietitians, psychologists, and healthcare professionals to provide personalized care at your doorstep and online. From pain & injury rehabilitation to customized diet plans, psychological counseling, and laboratory services, we support you in every step of your health journey.
-
-What Makes Us Different?
- Convenient Care at Home – Physiotherapy, lab tests, and consultations delivered to you.
-
- Mental Well-Being Support – Professional psychologists for stress, anxiety, and overall emotional health.
-
- Expert Team – Experienced professionals dedicated to recovery & holistic wellness.
-
- Easy Access – Book appointments, schedule tests, or get instant guidance via WhatsApp.
-
- Affordable Packages – Designed to be budget-friendly for students, families, and individuals.
-
-
-✨ With us, healthcare is not just a service – it’s a commitment to your healthier tomorrow.
+  <!-- TeleRehab Section -->
+  <section id="telerehab" class="telerehab-highlight">
+    <div class="telerehab-content">
+      <h2 style="color: #FFC947;">PhysioDiet TeleRehab</h2>
+      <p class="telerehab-subtitle">Professional physiotherapy & rehab sessions online — from the comfort of your home
       </p>
-    </div>
-  </section>
-
-  <!-- OUR PARTNERS SECTION -->
-  <section id="ourpartners">
-    <h2>Our Partners</h2>
-
-    <!-- Moving Logos -->
-    <div class="partners-slider">
-      <div class="partners-track">
-        <img src="image/tiwana.jpg" alt="physiotherapy near me">
-        <img src="image/burn.jpg" alt="weight gain diet plans">
-        <img src="image/mpr.jpg" alt="weight loss diet plans">
-        <img src="image/shc.jpg" alt="physio near me">
-        <img src="image/bone.jpg" alt="physiotherapy in chandigarh">
-        <img src="image/boneCare.jpg" alt="mental health">
-        <img src="image/sk.jpg" alt="blood checkup near me">
-        <img src="image/mrn.jpg" alt="blood test in chandigarh">
-        <img src="image/ovr.jpg" alt="dietician near me">
-        
-
-        <!-- Duplicate logos for infinite scroll -->
-<img src="image/tiwana.jpg" alt="physiotherapy near me">
-        <img src="image/burn.jpg" alt="weight gain diet plans">
-        <img src="image/mpr.jpg" alt="weight loss diet plans">
-        <img src="image/shc.jpg" alt="weight management">
-        <img src="image/bone.jpg" alt="physiotherapy in india">
-        <img src="image/boneCare.jpg" alt="mental health centre near me">
-        <img src="image/sk.jpg" alt="blood checkup near me">
-        <img src="image/mrn.jpg" alt="dietician  in chandigarh">
-        <img src="image/ovr.jpg" alt="dietician near me">
-        
-  
-      </div>
-    </div>
-
-    <!-- Partner Details -->
-    <div class="partner-details">
-      <h3>Partner Details</h3>
-      <div class="details-container">
-
-        <!-- Client 1 (Active by default) -->
-        <div class="client active">
-          <h4>Swagat Physiotherapy & Artificial Limbs Centre</h4>
-          <p><strong>Address:</strong> SCO-167,Sector 38C,chandigarh 160036</p>
-          <p><strong>Mobile:</strong> 7696151970</p>
-        </div>
-
-        <!-- Client 2 -->
-        <div class="client">
-          <h4>Dr. Ravish Garg</h4>
-          <h5>MBBS,MS (Ortho)</h5>
-          <p><strong>Address:</strong>House No-10,Sector 11 ,Chandigarh</p>
-
-          <p><strong>Mobile:</strong>8968804464</p>
-        </div>
-
-        <!-- Client 3 -->
-        <div class="client">
-          <h4>M.R Nandwani Physiotherapy centre</h4>
-          <p><strong>Address:</strong> House No-3345,Sector-15D,Chandigarh</p>
-          <p><strong>Mobile:</strong> 76966260</p>
-        </div>
-        <!-- Client 4 -->
-        <div class="client">
-          <h4>D.R Vishesh Garg</h4>
-          <h5>Physiotherapist</h5>
-          <p><strong>Address:</strong> House No-1112,Sector-29B,Chandigarh</p>
-          <p><strong>Mobile:</strong> 9872819496</p>
-        </div>
-        <!-- Client 5 -->
-        <div class="client">
-          <h4>Tiwana Gym</h4>
-          <p><strong>Address:</strong> House No-207/3,Vikas Nagar,Chandigarh</p>
-          <p><strong>Mobile:</strong> 9888720388</p>
-        </div>
-
-        <!-- Client 6 -->
-        <div class="client">
-          <h4>OVR Gym</h4>
-          <p><strong>Address:</strong> Sector 15,Chandigarh</p>
-          <p><strong>Mobile:</strong> </p>
-        </div>
-
-
-
-      </div>
-
-      <!-- Navigation Buttons -->
-      <div class="details-nav">
-        <button id="prev-client">Previous</button>
-        <button id="next-client">Next</button>
-      </div>
+      <div class="price-bubble">Starting at just <strong>Rs.399</strong> / session</div>
+      <ul class="telerehab-features">
+        <li><i class="fas fa-check-circle"></i> No travel needed</li>
+        <li><i class="fas fa-check-circle"></i> Expert physios</li>
+        <li><i class="fas fa-check-circle"></i> Flexible timings</li>
+        <li><i class="fas fa-check-circle"></i> Available across India</li>
+      </ul>
+      <a href="https://wa.me/917611155249?text=Hi!%20I%20want%20to%20book%20a%20TeleRehab%20session."
+        class="btn-telerehab" target="_blank">Book TeleRehab Session</a>
     </div>
   </section>
 
 
-<!-- OUR ACTIVITIES SECTION -->
-<section id="OurActivites">
-  <h2>Our Activities</h2>
-
-  <div class="activities-wrapper">
-    <div class="activities-slider">
-
-      <!-- Slides -->
-       <div class="slide active">
-        <div class="media-wrap">
-          <img src="image/poshan maah.jpg" alt="Activity 1">
-        </div>
-      </div>
-
-
-      
-      <div class="slide active">
-        <div class="media-wrap">
-          <img src="image/burn seminar.jpg" alt="Activity 1">
-        </div>
-      </div>
-
-       <div class="slide active">
-        <div class="media-wrap">
-          <img src="image/webinar_act.jpg" alt="Activity 1">
-        </div>
-      </div>
-
-      
-    
-
-      <!-- Prev / Next -->
-     
+  <!-- Patient Testimonials -->
+  <section id="testimonials" class="testimonials-section">
+    <div class="section-header">
+      <h2>What Our Patients Say</h2>
+      <p>Real stories of recovery and renewed health</p>
     </div>
-
-    <!-- Dots -->
-    <div class="dots">
-
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"The home physiotherapy service is excellent. My mother's knee pain has improved
+          significantly without her having to travel. Highly recommended!"</p>
+        <p class="patient-name">Rahul Sharma <br><span>Post-Surgery Rehab</span></p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"PhysioDiet TeleRehab was exactly what I needed. Only Rs. 399 and I get expert advice at
+          home. Great value and very convenient."</p>
+        <p class="patient-name">Priya S. <br><span>Back Pain Relief</span></p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"The diet plan provided was very easy to follow and gave me great results. Thanks for the
+          continuous support!"</p>
+        <p class="patient-name">Amit Verma <br><span>Weight Management</span></p>
+      </div>
+      <div class="testimonial-card">
+        <div class="stars">★★★★★</div>
+        <p class="review-text">"Very professional psychology services. Being able to talk to someone from the comfort of
+          my home helped me manage my anxiety much better."</p>
+        <p class="patient-name">Neha K. <br><span>Mental Wellness</span></p>
+      </div>
     </div>
- <button class="btn prev" aria-label="Previous slide">‹</button>
-      <button class="btn next" aria-label="Next slide">›</button>
-  </div>
-</section>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="AboutUs" class="about-section">
+    <div class="about-container">
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p class="about-intro">At Physio DietFit Care, we believe true health is a balance of body, mind, and nutrition.
+          Our qualified physiotherapists, dietitians, psychologists, and healthcare professionals bring expert care to
+          your home — making quality healthcare affordable for everyone in Chandigarh and beyond.</p>
+        <a href="#book" class="btn-primary" style="margin-top: 20px;">Book FREE Consultation</a>
+      </div>
+      <div class="about-features">
+        <h3>What Makes Us Different?</h3>
+        <ul>
+          <li>
+            <div class="feature-icon"><i class="fas fa-home"></i></div>
+            <div>
+              <strong>Home Visits</strong>
+              <span>Care at your doorstep, no travel needed</span>
+            </div>
+          </li>
+          <li>
+            <div class="feature-icon"><i class="fas fa-piggy-bank"></i></div>
+            <div>
+              <strong>Affordable Pricing</strong>
+              <span>TeleRehab from Rs.399, First consult FREE</span>
+            </div>
+          </li>
+          <li>
+            <div class="feature-icon"><i class="fas fa-heart"></i></div>
+            <div>
+              <strong>Holistic Care</strong>
+              <span>Physio + Diet + Psychology + Blood Tests</span>
+            </div>
+          </li>
+          <li>
+            <div class="feature-icon"><i class="fas fa-mobile-alt"></i></div>
+            <div>
+              <strong>Easy Booking</strong>
+              <span>WhatsApp, call, or completely online</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans & Pricing Summary -->
+  <section id="pricing-summary" class="pricing-summary-section">
+    <div class="section-header">
+      <h2>Affordable Healthcare For All</h2>
+      <p>Transparent pricing with zero hidden charges</p>
+    </div>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <h3>Home Physio</h3>
+        <div class="price">As per plan</div>
+        <p class="free-badge">1st consult FREE</p>
+      </div>
+      <div class="price-card popular">
+        <h3>TeleRehab</h3>
+        <div class="price">From Rs.399</div>
+        <p class="free-badge">1st consult FREE</p>
+      </div>
+      <div class="price-card">
+        <h3>Diet Plan</h3>
+        <div class="price">As per plan</div>
+        <p class="free-badge">1st consult FREE</p>
+      </div>
+      <div class="price-card">
+        <h3>Blood Test</h3>
+        <div class="price">All tests available</div>
+        <p class="free-badge">Home collection</p>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="plans.html" class="btn-primary">See Full Pricing</a>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="faq-section">
+    <div class="section-header">
+      <h2>Frequently Asked Questions</h2>
+    </div>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Is the first consultation really free?</h4>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes! Your first consultation is completely free — no charges, no conditions.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>What is PhysioDiet TeleRehab?</h4>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Our online physiotherapy & rehab service from anywhere, at just Rs.399 per session via video call.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Do you offer home visits?</h4>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, we serve Chandigarh and nearby areas with qualified physios visiting your home.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Do you have psychology / mental health services?</h4>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, qualified psychologists for anxiety, depression, schizophrenia, bipolar disorder, and more.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>Can I get a blood test done at home?</h4>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, all types of blood tests are available with home sample collection.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h4>How do I book?</h4>
+          <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Call/WhatsApp: +91 7611155249, or fill the booking form on this page.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-
-<!-- <-------------------------------------------------------------------------------------- -->
+  <!-- Lead Capture Form (Bottom) -->
+  <section class="lead-capture-section" style="background-color: #0E7490;">
+    <div class="form-container" style="box-shadow: 0 15px 50px rgba(0,0,0,0.2);">
+      <h2>Start Your Health Journey</h2>
+      <p class="subtitle" style="color: #0E7490;">Book a FREE consultation today.</p>
+      <form action="#" method="POST" class="booking-form">
+        <div class="form-row">
+          <input type="text" placeholder="Full Name" required>
+          <input type="tel" placeholder="+91 Mobile Number" required>
+        </div>
+        <div class="form-row">
+          <select required>
+            <option value="" disabled selected>Service Needed</option>
+            <option>Physiotherapy</option>
+            <option>TeleRehab</option>
+            <option>Diet Plan</option>
+            <option>Psychology</option>
+            <option>Blood Test</option>
+          </select>
+          <select required>
+            <option value="" disabled selected>Preferred Time</option>
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-primary" style="width: 100%; font-size: 1.1rem; padding: 15px;">Get FREE
+          Callback</button>
+      </form>
+    </div>
+  </section>
 
   <!-- fixed contact -->
-  <a class="chat-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeGqvJJYCaoxi5Sbksn4Ts6fAtnWbaQ9WQyttS0p7guGjN_BQ/viewform?usp=header" target="_blank">
-    Book An Appointment
+  <a class="chat-button"
+    href="https://wa.me/917611155249?text=Hi!%20I%20would%20like%20to%20book%20a%20free%20consultation."
+    target="_blank">
+    <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i> Book An Appointment
   </a>
 
   <!-- Footer Section -->
-<footer class="footer">
-  <div class="footer-container">
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- About -->
+      <div class="footer-about">
+        <h3>Physio DietFit Care</h3>
+        <p>Your trusted partner for physiotherapy, diet planning, and preventive healthcare.</p>
+        <div style="margin-top: 15px; display: flex; align-items: center; gap: 8px; color: #FFC947;">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+            class="fas fa-star"></i>
+          <span style="color: white; font-weight: 500;">5.0 on Google</span>
+        </div>
+      </div>
 
-    <!-- About -->
-    <div class="footer-about">
-      <h3>Physio DietFit Care</h3>
-      <p>Your trusted partner for physiotherapy, diet planning, and preventive healthcare.</p>
+      <!-- Quick Links -->
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#service">Our Services</a></li>
+          <li><a href="#AboutUs">About Us</a></li>
+          <li><a href="#ourpartners">Our Partners</a></li>
+          <li><a href="#Contactus">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Phone:</strong> +91 7611155249</p>
+        <p><strong>Email:</strong> physiodietfitcare@gmail.com</p>
+        <p><strong>Address:</strong> Chandigarh, India</p>
+        <p style="color: #FFC947; font-weight: bold; margin-top: 10px;">First Consultation is FREE!</p>
+      </div>
+
+      <!-- Social Media -->
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <a href="https://www.instagram.com/physiodietfitcare" target="_blank"><i class="fab fa-instagram"
+            style="font-size: 1.5rem;"></i></a>
+        <a href="https://www.facebook.com/physiodietfitcare" target="_blank"><i class="fab fa-facebook-f"
+            style="font-size: 1.5rem;"></i></a>
+        <a href="https://www.linkedin.com/company/physiodietfit-care-pdf-care/" target="_blank"><i
+            class="fab fa-linkedin-in" style="font-size: 1.5rem;"></i></a>
+        <a href="https://youtube.com/@physiodietfitcare" target="_blank"><i class="fab fa-youtube"
+            style="font-size: 1.5rem;"></i></a>
+      </div>
     </div>
 
-    <!-- Quick Links -->
-    <div class="footer-links">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#service">Our Services</a></li>
-        <li><a href="#AboutUs">About Us</a></li>
-        <li><a href="#ourpartners">Our Partners</a></li>
-        <li><a href="#Contactus">Contact Us</a></li>
-      </ul>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Physio DietFit Care. All Rights Reserved.</p>
     </div>
+  </footer>
 
-    <!-- Contact Info -->
-    <div class="footer-contact">
-      <h4>Contact Us</h4>
-      <p><strong>Phone:</strong> +91 78145 58316</p>
-      <p><strong>Email:</strong>physiodietfitcare@gmail.com</p>
-      <p><strong>Address:</strong> Chandigarh, India</p>
-    </div>
-
-    <!-- Social Media -->
-    <div class="footer-social">
-      <h4>Follow Us</h4>
-      <a href="https://www.instagram.com/physiodietfitcare?igsh=MXB3aXN2MnduNXQyMw==" target="_blank"><img src="https://img.icons8.com/ios-filled/30/ffffff/instagram-new.png" alt="Instagram"></a>
-      <a href="https://www.facebook.com/share/1JiFoHk4aU/" target="_blank"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png" alt="Facebook"></a>
-      <a href="https://www.linkedin.com/company/physiodietfit-care-pdf-care/" target="_blank"><img src="https://img.icons8.com/?size=30&id=8808&format=png&color=000000" alt="Linked in"></a>
-      <a href="https://youtube.com/@physiodietfitcare?feature=shared" target="_blank"><img src="https://img.icons8.com/ios-filled/30/ffffff/youtube-play.png" alt="YouTube"></a>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; <span id="year"></span> Physio DietFit Care. All Rights Reserved.</p>
-  </div>
-</footer>
-
- <script src="index.js"></script>
+  <script src="index.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-

@@ -1,164 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mental Health Support - Physio DietFit Care</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            navy: "#131D4F",
-            yellow: "#FFC947",
-            cream: "#FEFBF6",
-          }
-        }
-      }
-    }
-  </script>
-</head>
-<body class="bg-cream text-navy font-sans">
 
-  <!-- Navbar -->
-  <nav class="bg-navy text-white px-6 py-4 flex items-center justify-between shadow-md">
-    <div class="flex items-center space-x-4">
-      <img src="image/logo.jpg" alt="Logo" class="w-14 h-14 rounded-full border-2 border-yellow" />
-      <h1 class="text-2xl md:text-3xl font-bold">PHYSIO DIETFIT CARE</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Support - Physio DietFit Care</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { colors: { navy: "#131D4F", yellow: "#FFC947", cream: "#FEFBF6", teal: "#0E7490" } } } }</script>
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+  <div class="top-bar">First Consultation is FREE! | TeleRehab from Rs.399 | Call: <a href="tel:+917611155249"
+      style="color:white;font-weight:bold;text-decoration:none;">+91 7611155249</a></div>
+  <nav class="navbar">
+    <div class="nav-left"><a href="index.html">
+        <div class="logo"></div>
+      </a>
+      <h1><a href="index.html" style="text-decoration:none;color:inherit;">PHYSIO DIETFIT CARE</a></h1>
     </div>
+    <div class="nav-links"><a href="index.html" class="nav-item">Home</a><a href="index.html#service"
+        class="nav-item">Services</a><a href="index.html#telerehab" class="nav-item">TeleRehab</a><a
+        href="index.html#AboutUs" class="nav-item">About</a><a href="plans.html" class="nav-item">Plans</a><a
+        href="index.html#Contactus" class="nav-item">Contact</a></div>
+    <div class="nav-right"><a href="index.html#book" class="btn-primary">Book FREE Consultation</a></div>
   </nav>
 
-  <!-- Hero Section -->
   <section class="relative">
-    <img src="https://images.pexels.com/photos/4101140/pexels-photo-4101140.jpeg?auto=compress&cs=tinysrgb&w=1600" 
-         alt="Mental health support" 
-         class="w-full h-72 md:h-96 object-cover shadow-lg">
+    <img src="https://images.pexels.com/photos/4101140/pexels-photo-4101140.jpeg?auto=compress&cs=tinysrgb&w=1600"
+      alt="Mental health" class="w-full h-72 md:h-96 object-cover shadow-lg">
     <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
-      <h1 class="text-white text-3xl md:text-5xl font-bold text-center px-4">
-        Mental Health Support & Wellness
-      </h1>
+      <h1 class="text-white text-3xl md:text-5xl font-bold text-center px-4">Mental Health Support & Wellness</h1>
     </div>
   </section>
 
-  <!-- Introduction -->
   <section class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-10 items-center">
     <div>
-      <h2 class="text-3xl font-bold mb-4 border-l-4 border-yellow pl-3">Introduction</h2>
-      <p class="mb-4">
-        Hello, I’m a Mental Health Representative at PDF Care, dedicated to supporting individuals through life’s emotional and psychological challenges. 
-        Healing unfolds at your own pace, and every small step forward is a powerful part of the journey.
-      </p>
-      <p>
-        Our approach is rooted in empathy and gentle guidance, focusing on nurturing your potential, healing the inner child, and providing a safe, non-judgmental space.
-      </p>
+      <h2 class="text-3xl font-bold mb-4" style="color:#0E7490; border-left:4px solid #FFC947; padding-left:12px;">
+        Introduction</h2>
+      <p class="mb-4">Hello, I'm a Mental Health Representative at PDF Care, dedicated to supporting individuals through
+        life's emotional and psychological challenges.</p>
+      <p>Our approach is rooted in empathy and gentle guidance, focusing on nurturing your potential, healing the inner
+        child, and providing a safe, non-judgmental space.</p>
     </div>
     <img src="https://images.pexels.com/photos/5699459/pexels-photo-5699459.jpeg?auto=compress&cs=tinysrgb&w=1600"
-         alt="Counseling session"
-         class="rounded-xl shadow-lg">
+      alt="Counseling" class="rounded-xl shadow-lg">
   </section>
 
-  <!-- Services Offered -->
   <section class="bg-white py-12 px-6">
     <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-10 border-b-4 border-yellow inline-block">Services Offered</h2>
+      <h2 class="text-3xl font-bold text-center mb-10" style="color:#0E7490;">Services Offered</h2>
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div class="bg-cream shadow-md rounded-lg p-6 hover:shadow-xl transition">
-          <img src="https://media.istockphoto.com/id/1984757470/photo/teenage-girl-at-therapy-session-with-mental-health-professional.webp?a=1&b=1&s=612x612&w=0&k=20&c=fSTrZICBInAuqStqXvsMA0qPzxbgmsgggJrhtrpyKjs=" class="rounded-lg mb-4">
+        <div class="bg-gray-50 shadow-md rounded-lg p-6 hover:shadow-xl transition">
+          <img
+            src="https://media.istockphoto.com/id/1984757470/photo/teenage-girl-at-therapy-session-with-mental-health-professional.webp?a=1&b=1&s=612x612&w=0&k=20&c=fSTrZICBInAuqStqXvsMA0qPzxbgmsgggJrhtrpyKjs="
+            class="rounded-lg mb-4 w-full h-48 object-cover">
           <h3 class="text-xl font-semibold mb-2">Individual Counseling</h3>
           <p class="text-sm">One-on-one sessions for depression, anxiety, trauma, grief, and personal growth.</p>
         </div>
-        <div class="bg-cream shadow-md rounded-lg p-6 hover:shadow-xl transition">
-          <img src="https://images.pexels.com/photos/5699431/pexels-photo-5699431.jpeg?auto=compress&cs=tinysrgb&w=1600" class="rounded-lg mb-4">
+        <div class="bg-gray-50 shadow-md rounded-lg p-6 hover:shadow-xl transition">
+          <img src="https://images.pexels.com/photos/5699431/pexels-photo-5699431.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="rounded-lg mb-4 w-full h-48 object-cover">
           <h3 class="text-xl font-semibold mb-2">Family & Couples Therapy</h3>
           <p class="text-sm">Support to improve communication, resolve conflicts, and rebuild trust.</p>
         </div>
-        <div class="bg-cream shadow-md rounded-lg p-6 hover:shadow-xl transition">
-          <img src="https://images.pexels.com/photos/8978174/pexels-photo-8978174.jpeg?auto=compress&cs=tinysrgb&w=1600" class="rounded-lg mb-4">
+        <div class="bg-gray-50 shadow-md rounded-lg p-6 hover:shadow-xl transition">
+          <img src="https://images.pexels.com/photos/8978174/pexels-photo-8978174.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="rounded-lg mb-4 w-full h-48 object-cover">
           <h3 class="text-xl font-semibold mb-2">Stress & Anxiety Management</h3>
           <p class="text-sm">Therapeutic tools to handle stress, panic attacks, and chronic anxiety.</p>
         </div>
-        <div class="bg-cream shadow-md rounded-lg p-6 hover:shadow-xl transition">
-          <img src="https://images.pexels.com/photos/3184327/pexels-photo-3184327.jpeg?auto=compress&cs=tinysrgb&w=1600" class="rounded-lg mb-4">
+        <div class="bg-gray-50 shadow-md rounded-lg p-6 hover:shadow-xl transition">
+          <img src="https://images.pexels.com/photos/3184327/pexels-photo-3184327.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="rounded-lg mb-4 w-full h-48 object-cover">
           <h3 class="text-xl font-semibold mb-2">Career & Academic Counseling</h3>
           <p class="text-sm">Guidance for students and professionals under academic or work stress.</p>
         </div>
-        <div class="bg-cream shadow-md rounded-lg p-6 hover:shadow-xl transition">
-          <img src="https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg?auto=compress&cs=tinysrgb&w=1600" class="rounded-lg mb-4">
+        <div class="bg-gray-50 shadow-md rounded-lg p-6 hover:shadow-xl transition">
+          <img src="https://images.pexels.com/photos/3768131/pexels-photo-3768131.jpeg?auto=compress&cs=tinysrgb&w=1600"
+            class="rounded-lg mb-4 w-full h-48 object-cover">
           <h3 class="text-xl font-semibold mb-2">Workshops & Awareness</h3>
-          <p class="text-sm">Group sessions & webinars on mental health awareness and resilience building.</p>
+          <p class="text-sm">Group sessions & webinars on mental health awareness and resilience.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- How It Works -->
   <section class="max-w-5xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold text-center mb-8 border-l-4 border-yellow pl-3 inline-block">How It Works</h2>
+    <h2 class="text-3xl font-bold text-center mb-8" style="color:#0E7490;">How It Works</h2>
     <div class="bg-white rounded-lg shadow-lg p-8 space-y-4">
       <ol class="list-decimal list-inside space-y-3">
-        <li><span class="font-bold">Schedule Appointment:</span> Fill form to book time → <a href="https://tinyurl.com/sha8tsmx" class="text-blue-600 underline">Click here</a></li>
-        <li><span class="font-bold">Initial Consultation:</span> Explore personal history and concerns.</li>
-        <li><span class="font-bold">Personalized Plan:</span> Therapy plan with realistic goals.</li>
-        <li><span class="font-bold">Follow-Up Sessions:</span> Regular check-ins and adjustments.</li>
+        <li><strong>Schedule Appointment:</strong> Fill form to book time</li>
+        <li><strong>Initial Consultation:</strong> Explore personal history and concerns.</li>
+        <li><strong>Personalized Plan:</strong> Therapy plan with realistic goals.</li>
+        <li><strong>Follow-Up Sessions:</strong> Regular check-ins and adjustments.</li>
       </ol>
     </div>
   </section>
 
-  <!-- Session Fees -->
-  <section class="bg-navy text-white py-12">
-    <div class="max-w-5xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-center mb-8 text-yellow">Session Fees</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-white/10 rounded-lg p-6 shadow">
-          <p>Individual Session: <span class="font-bold">₹1000 / 50 mins</span></p>
-          <p>Family / Couples: <span class="font-bold">₹1500 / 60 mins</span></p>
-        </div>
-        <div class="bg-white/10 rounded-lg p-6 shadow">
-          <p>Workshops: <span class="font-bold">₹2000 per session</span></p>
-          <p>Package: <span class="font-bold">₹4500 for 5 sessions</span></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why Choose Us -->
-  <section class="max-w-6xl mx-auto px-6 py-12">
-    <h2 class="text-3xl font-bold text-center mb-8 border-b-4 border-yellow inline-block">Why Choose Us?</h2>
-    <ul class="grid md:grid-cols-2 gap-6 list-disc list-inside">
-      <li>Trained & experienced professionals</li>
-      <li>Empathetic, judgment-free environment</li>
-      <li>Client-centered & evidence-based methods</li>
-      <li>Flexible sessions (online & offline)</li>
-      <li>Confidentiality is our priority</li>
-    </ul>
-  </section>
-
-  <!-- Contact -->
-  <section class="bg-white py-12">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-6 border-l-4 border-yellow pl-3 inline-block">Contact Us</h2>
-      <p class="mb-2">📧 Email: <a href="mailto:physiodietfitcare@gmail.com" class="text-blue-600 underline">physiodietfitcare@gmail.com</a></p>
-      <p class="mb-2">📝 Form: <a href="https://tinyurl.com/sha8tsmx" class="text-blue-600 underline">Fill Assessment Form</a></p>
+  <section class="py-12 text-center" style="background-color:#0E7490; color:white;">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6">Contact Us</h2>
+      <p class="mb-2">📧 Email: <a href="mailto:physiodietfitcare@gmail.com"
+          class="underline text-white">physiodietfitcare@gmail.com</a></p>
+      <p class="mb-2">📞 Phone: <a href="tel:+917611155249" class="underline text-white">+91 7611155249</a></p>
       <p>💻 Online & Offline sessions available</p>
     </div>
   </section>
 
-  <!-- Back Button -->
-  <div class="text-center my-8">
-    <a href="index.html#service" 
-       class="inline-block bg-navy text-yellow px-6 py-2 rounded-full shadow-md font-bold hover:scale-105 transition">
-       ← Back to Services
-    </a>
-  </div>
+  <div class="text-center my-8"><a href="index.html#service" class="btn-primary">← Back to Services</a></div>
 
-  <!-- Footer -->
-  <footer class="bg-navy text-white text-center py-4">
-    <p>&copy; <span id="year"></span> Physio DietFit Care. All Rights Reserved.</p>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>Physio DietFit Care</h3>
+        <p>Your trusted partner for physiotherapy, diet planning, and preventive healthcare.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#service">Services</a></li>
+          <li><a href="index.html#AboutUs">About Us</a></li>
+          <li><a href="plans.html">Plans</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p><strong>Phone:</strong> +91 7611155249</p>
+        <p><strong>Email:</strong> physiodietfitcare@gmail.com</p>
+        <p><strong>Address:</strong> Chandigarh, India</p>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4><a href="https://www.instagram.com/physiodietfitcare" target="_blank"><i
+            class="fab fa-instagram" style="font-size:1.5rem;"></i></a><a
+          href="https://www.facebook.com/physiodietfitcare" target="_blank"><i class="fab fa-facebook-f"
+            style="font-size:1.5rem;"></i></a><a href="https://youtube.com/@physiodietfitcare" target="_blank"><i
+            class="fab fa-youtube" style="font-size:1.5rem;"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Physio DietFit Care. All Rights Reserved.</p>
+    </div>
   </footer>
-
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
+
 </html>
