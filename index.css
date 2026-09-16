@@ -645,13 +645,23 @@ h2 {
   pointer-events: none;
 }
 
+/* Columns are weighted to their content, not equal. Quick Links needs about
+   a third of what Contact Us does, so equal columns left a dead gap between
+   them while Contact was squeezed hard enough to wrap. */
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 40px;
+  grid-template-columns: 2fr 0.55fr 1.5fr 0.85fr;
+  gap: 36px 28px;
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 40px;
+}
+
+@media (max-width: 1100px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px 40px;
+  }
 }
 
 .footer h3 {
@@ -742,17 +752,29 @@ h2 {
   min-width: 60px;
 }
 
+/* Full-width bar below the footer columns, not a column of its own. */
 .footer-social {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  align-content: flex-start;
-  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 26px 0 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
 }
 
 .footer-social h4 {
-  width: 100%;
-  margin-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+.footer-social h4::after {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
 }
 
 .footer-social a {
@@ -1159,6 +1181,21 @@ h2 {
    RESPONSIVE FIXES
 ============================ */
 @media (max-width: 992px) {
+  /* The single-row nav stops fitting somewhere around 930px, so it has to
+     stack here rather than at 768px, or it pushes the page sideways. */
+  .navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 15px 5%;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
   .hero-content h1 {
     font-size: 2.8rem;
   }
@@ -1257,9 +1294,7 @@ h2 {
   }
 
   .footer-social {
-    justify-content: center;
-    display: flex;
-    gap: 15px;
+    padding-top: 30px;
   }
 
   .chat-button {
